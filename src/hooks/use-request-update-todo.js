@@ -21,7 +21,6 @@ export const useRequestUpdateTodo = (todos, setTodos) => {
 						todo.id === updatedTodo.id ? updatedTodo : todo,
 					),
 				);
-				//setRefreshTodos(!refreshTodos);
 			})
 			.finally(() => setIsUpdating(false));
 	};

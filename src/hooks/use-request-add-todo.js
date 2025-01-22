@@ -17,7 +17,6 @@ export const useRequestAddTodo = (todos, setTodos) => {
 		})
 			.then((rawResponse) => rawResponse.json())
 			.then((newTodo) => {
-				//setRefreshTodos(!refreshTodos);
 				setTodos((prevTodos) => [...prevTodos, newTodo]);
 			})
 			.finally(() => setIsCreating(false));
